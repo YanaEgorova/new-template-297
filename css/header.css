@@ -1,5 +1,6 @@
 .header__wrapper {
   position: relative;
+  z-index: 2;
 }
 body.open-menu {
   overflow: hidden;
@@ -117,8 +118,13 @@ body.open-menu {
     display: flex;
     margin-left: 2rem;
   }
+  .header__wrapper {
+    padding: 1rem;
+  }
   .header {
-    padding: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: var(--third-brand-color);
+    border-radius: 1rem;
   }
   .nav__link {
     position: relative;

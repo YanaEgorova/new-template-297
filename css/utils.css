@@ -188,10 +188,9 @@ body.error-active .error__overlay {
   text-transform: uppercase;
   font-family: var(--main-title-font);
   border: 0.2rem solid var(--second-brand-color);
-  background-color: var(--second-brand-color);
-  color: var(--sub-text-color);
+  color: var(--second-brand-color);
+  background-color: transparent;
   transition: all 0.3s ease-in-out;
-  border-radius: 1rem;
 }
 
 .bold {
@@ -207,7 +206,8 @@ body.error-active .error__overlay {
   }
 
   .btn:hover {
-    transform: scale(1.1);
+    background-color: var(--second-brand-color);
+    color: var(--sub-text-color);
   }
 
   .title {
